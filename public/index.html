@@ -8,8 +8,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Plan My Trip</h1>
-    <div id="map"></div>
+    <div id="nav"></div>
+    <h1>My Trip Planner</h1>
+    <div id="map-tools">
+      <div id="map"></div>
+      <div id="panels">
+        <div id="options-panel">
+          <div id="selects">
+            <label for="hotels">Hotels</label>
+            <select id="hotels" name="hotels">
+              <option>Hilton</option>
+              <option>Not the Hilton</option>
+            </select>
+            <button type="submit">Search</button>
+            <br />
+
+            <label for="restuarants">Restaurants</label>
+            <select id="restuarants" name="restuarants">
+              <option>Girl and the Goat</option>
+              <option>Not the Girl and the Goat</option>
+            </select>
+            <button type="submit">Search</button>
+            <br />
+
+            <label for="activities">Things To Do</label>
+            <select id="activities" name="activities">
+              <option>Bike Lake Shore Drive</option>
+              <option>Stay Inside -- It's Cold</option>
+            </select>
+            <button type="submit">Search</button>
+          </div>
+        </div>
+        <div id="itinerary">
+          <div id="itinerary-items"></div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="bundle.js"></script>
 </html>
